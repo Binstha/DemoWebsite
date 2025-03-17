@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Sticky Navbar -->
+    <nav class="sticky top-0 bg-white shadow z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczOSYq3RD-aNOC8OEXVqHQ6EHkW_dLtLqXFr3M4ZqNWvkLduQbnZSBFvlN-cMo9cWeTo_yNNKPNRtFys1PJeEeUixW_V_un4HqRixuPtZo6Y8EMB6AiYNghX-evb6kfOXfJSxnNq4w_DeSVJrsoTWNdy=w1024-h653-s-no-gm?authuser=0" alt="Logo" class="w-10 h-10 rounded-full">
+                <h1 class="text-xl font-bold">ConstructionCo</h1>
+            </div>
+            <!-- Desktop Menu -->
+            <div class="space-x-6 hidden md:flex">
+                <a href="#hero" class="hover:text-blue-600">Home</a>
+                <a href="#about" class="hover:text-blue-600">About</a>
+                <a href="#services" class="hover:text-blue-600">Services</a>
+                <a href="#contact" class="hover:text-blue-600">Contact</a>
+            </div>
+            <!-- Mobile toggle -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden px-4 pb-4 md:hidden bg-white">
+            <a href="#hero" class="block py-2 hover:text-blue-600">Home</a>
+            <a href="#about" class="block py-2 hover:text-blue-600">About</a>
+            <a href="#services" class="block py-2 hover:text-blue-600">Services</a>
+            <a href="#contact" class="block py-2 hover:text-blue-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Slider -->
+    <section id="hero" class="relative w-full h-screen overflow-hidden">
+        <div class="absolute inset-0 z-10 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center">
+            <h2 class="text-4xl md:text-6xl font-bold">Building the Future</h2>
+            <p class="mt-4 text-lg">Reliable Construction Solutions for Your Vision</p>
+        </div>
+        <!-- Dummy image slider -->
+        <div class="relative w-full h-full">
+            <div class="w-full h-full animate-pulse">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczNSZkeDj6aYdUc-NA3AZ0V9DcnD2h1NbXcCDblt62pFgk4wJavN6eC6VcTQ1W3gKZMgQSqHVRV3gki9wLdKtfnAlYl-OXKd-FIYB8mJ1GiSyhdTnudTH4spntQEaTKfD3r2-6TGv5w5B90R9kq17FAW=w911-h911-s-no-gm?authuser=0" class="w-full h-full object-cover absolute inset-0" alt="Slide 1">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczNyHsQOVeHxZUBcSfFzMYUC5NGr3U42R6Mz9OSuga0T9utOv8E6Gmu0Q-fp4Mj9pshX8rdb8NP09PFRpargmsvNEWO_spGAzVF11JhjW3Q62Q9vSkPQaux2ad_k9KxZXtr9pq_EoEGVI7FEiS-UJaq8=w911-h911-s-no-gm?authuser=0" class="w-full h-full object-cover absolute inset-0 opacity-0" alt="Slide 2">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczNSZkeDj6aYdUc-NA3AZ0V9DcnD2h1NbXcCDblt62pFgk4wJavN6eC6VcTQ1W3gKZMgQSqHVRV3gki9wLdKtfnAlYl-OXKd-FIYB8mJ1GiSyhdTnudTH4spntQEaTKfD3r2-6TGv5w5B90R9kq17FAW=w911-h911-s-no-gm?authuser=0" class="w-full h-full object-cover absolute inset-0 opacity-0" alt="Slide 3">
+                <img src="https://via.placeholder.com/1920x1080?text=Slide+4" class="w-full h-full object-cover absolute inset-0 opacity-0" alt="Slide 4">
+                <img src="https://via.placeholder.com/1920x1080?text=Slide+5" class="w-full h-full object-cover absolute inset-0 opacity-0" alt="Slide 5">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 max-w-7xl mx-auto">
+        <h3 class="text-3xl font-bold mb-6 text-center">About Us</h3>
+        <p class="text-lg text-center max-w-3xl mx-auto">
+            ConstructionCo is a leading construction company with over 20 years of experience in delivering quality and sustainable building solutions. Our team of dedicated professionals is committed to turning your dreams into reality with a focus on precision, safety, and excellence.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-100 px-4 max-w-7xl mx-auto">
+        <h3 class="text-3xl font-bold mb-6 text-center">Our Services</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="p-6 bg-white shadow rounded">
+                <h4 class="font-semibold mb-2">Residential Construction</h4>
+                <p>We build modern, energy-efficient homes tailored to your unique style.</p>
+            </div>
+            <div class="p-6 bg-white shadow rounded">
+                <h4 class="font-semibold mb-2">Commercial Projects</h4>
+                <p>High-quality commercial spaces designed for productivity and success.</p>
+            </div>
+            <div class="p-6 bg-white shadow rounded">
+                <h4 class="font-semibold mb-2">Renovation & Remodeling</h4>
+                <p>Upgrade your spaces with our expert renovation and remodeling services.</p>
+            </div>
+            <div class="p-6 bg-white shadow rounded">
+                <h4 class="font-semibold mb-2">Infrastructure Development</h4>
+                <p>From roads to bridges, we handle large-scale infrastructure projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 max-w-7xl mx-auto">
+        <h3 class="text-3xl font-bold mb-6 text-center">Contact Us</h3>
+        <form class="max-w-xl mx-auto space-y-4">
+            <input type="text" placeholder="Your Name" class="w-full p-3 border rounded" required>
+            <input type="email" placeholder="Your Email" class="w-full p-3 border rounded" required>
+            <textarea placeholder="Your Message" class="w-full p-3 border rounded" rows="5" required></textarea>
+            <button type="submit" class="w-full p-3 bg-blue-600 text-white rounded hover:bg-blue-700">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="bg-gray-200 text-gray-800 py-8">
+            <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+                <div>
+                    <h4 class="font-bold text-lg">ConstructionCo</h4>
+                    <p>123 Main Street, Demon City</p>
+                    <p>Email: info@constructionco.com</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="flex items-center space-x-2 hover:text-blue-600">
+                        <i class="fab fa-facebook"></i><span>Facebook</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-2 hover:text-blue-600">
+                        <i class="fab fa-twitter"></i><span>Twitter</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-2 hover:text-blue-600">
+                        <i class="fab fa-linkedin"></i><span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-2 hover:text-blue-600">
+                        <i class="fab fa-instagram"></i><span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-900 text-white text-center py-4">
+            <p class="text-sm">&copy; 2025 ConstructionCo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
