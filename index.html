@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Construction Company</title>
+    <title>Alta Homes Company</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-gray-50 text-gray-800">
-
     <!-- Sticky Navbar -->
     <nav class="sticky top-0 bg-white shadow z-50">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <img src="https://lh3.googleusercontent.com/pw/AP1GczOSYq3RD-aNOC8OEXVqHQ6EHkW_dLtLqXFr3M4ZqNWvkLduQbnZSBFvlN-cMo9cWeTo_yNNKPNRtFys1PJeEeUixW_V_un4HqRixuPtZo6Y8EMB6AiYNghX-evb6kfOXfJSxnNq4w_DeSVJrsoTWNdy=w1024-h653-s-no-gm?authuser=0" alt="Logo" class="w-10 h-10 rounded-full">
-                <h1 class="text-xl font-bold">ConstructionCo</h1>
+                <a href="#hero" class="flex items-center space-x-2">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOSYq3RD-aNOC8OEXVqHQ6EHkW_dLtLqXFr3M4ZqNWvkLduQbnZSBFvlN-cMo9cWeTo_yNNKPNRtFys1PJeEeUixW_V_un4HqRixuPtZo6Y8EMB6AiYNghX-evb6kfOXfJSxnNq4w_DeSVJrsoTWNdy=w1024-h653-s-no-gm?authuser=0" alt="Logo" class="w-10 h-10 rounded-full">
+                    <h1 class="text-xl font-bold">Alta Homes</h1>
+                </a>
             </div>
             <!-- Desktop Menu -->
             <div class="space-x-6 hidden md:flex">
@@ -28,12 +28,14 @@
             <!-- Mobile toggle -->
             <div class="md:hidden">
                 <button id="menu-btn" class="focus:outline-none">
-                    <i class="fas fa-bars text-2xl"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                    </svg>
                 </button>
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden px-4 pb-4 md:hidden bg-white">
+        <div id="mobile-menu" class="hidden px-4 pb-4 md:hidden bg-white transition-all duration-300">
             <a href="#hero" class="block py-2 hover:text-blue-600">Home</a>
             <a href="#about" class="block py-2 hover:text-blue-600">About</a>
             <a href="#services" class="block py-2 hover:text-blue-600">Services</a>
@@ -63,7 +65,7 @@
     <section id="about" class="py-20 px-4 max-w-7xl mx-auto">
         <h3 class="text-3xl font-bold mb-6 text-center">About Us</h3>
         <p class="text-lg text-center max-w-3xl mx-auto">
-            ConstructionCo is a leading construction company with over 20 years of experience in delivering quality and sustainable building solutions. Our team of dedicated professionals is committed to turning your dreams into reality with a focus on precision, safety, and excellence.
+            Alta Homes is a leading construction company with over 20 years of experience in delivering quality and sustainable building solutions. Our team of dedicated professionals is committed to turning your dreams into reality with a focus on precision, safety, and excellence.
         </p>
     </section>
 
@@ -106,28 +108,40 @@
         <div class="bg-gray-200 text-gray-800 py-8">
             <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
                 <div>
-                    <h4 class="font-bold text-lg">ConstructionCo</h4>
+                    <h4 class="font-bold text-lg">Alta Homes</h4>
                     <p>123 Main Street, Demon City</p>
-                    <p>Email: info@constructionco.com</p>
+                    <p>Email: info@altahomes.com</p>
                 </div>
                 <div class="flex space-x-6">
-                    <a href="#" class="flex items-center space-x-2 hover:text-blue-600">
-                        <i class="fab fa-facebook"></i><span>Facebook</span>
+                    <a href="https://www.facebook.com" class="flex items-center space-x-2 hover:text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                        <span>Facebook</span>
                     </a>
-                    <a href="#" class="flex items-center space-x-2 hover:text-blue-600">
-                        <i class="fab fa-twitter"></i><span>Twitter</span>
+                    <a href="https://www.twitter.com" class="flex items-center space-x-2 hover:text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.57-1.37 1.96-2.36-.83.5-1.75.85-2.72 1.05a4.38 4.38 0 0 0-7.57 3c0 .34.04.68.11 1-3.64-.18-6.86-1.93-9.02-4.57-.4.65-.62 1.42-.62 2.25 0 1.52.76 2.86 1.95 3.64-.7.03-1.37-.22-1.89-.62v.06c0 2.09 1.48 3.82 3.44 4.21-.36.1-1.07.17-1.67.17-.48 0-.94-.03-1.4-.09a5.3 5.3 0 0 0 5.03 3.73c1.81 0 3.43-.78 4.57-2.05.34.01.67.03 1 .03 3.31 0 5.1-2.17 5.1-5.1 0-.13-.01-.25-.01-.38.9-.65 1.68-1.52 2.2-2.53z"></path>
+                        </svg>
+                        <span>Twitter</span>
                     </a>
-                    <a href="#" class="flex items-center space-x-2 hover:text-blue-600">
-                        <i class="fab fa-linkedin"></i><span>LinkedIn</span>
+                    <a href="https://www.linkedin.com" class="flex items-center space-x-2 hover:text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM7 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm10 11h-3v-4c0-1.1-.9-2-2-2s-2 .9-2 2v4h-3v-9h3v1c0-1.1.9-2 2-2s2 .9 2 2v1h3z"></path>
+                        </svg>
+                        <span>LinkedIn</span>
                     </a>
-                    <a href="#" class="flex items-center space-x-2 hover:text-blue-600">
-                        <i class="fab fa-instagram"></i><span>Instagram</span>
+                    <a href="https://www.instagram.com" class="flex items-center space-x-2 hover:text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path d="M12 2a5 5 0 0 0-5 5v3H6v4h1v3h4v1h3v-1h4v-3h1v-4h-1v-3a5 5 0 0 0-5-5zm0 2c1.4 0 2.7.6 3.6 1.6H8.4C9.3 7.6 10.6 7 12 7zm0 13a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+                        </svg>
+                        <span>Instagram</span>
                     </a>
                 </div>
             </div>
         </div>
         <div class="bg-gray-900 text-white text-center py-4">
-            <p class="text-sm">&copy; 2025 ConstructionCo. All rights reserved.</p>
+            <p class="text-sm">&copy; 2025 Alta Homes. All rights reserved.</p>
         </div>
     </footer>
 
@@ -138,7 +152,6 @@
             menu.classList.toggle('hidden');
         });
     </script>
-
 </body>
 
 </html>
